@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         DOCKER_IMAGE = 'wedagerw/java-maven-app:latest'
-        DOCKER_CREDS = 'java_maven_user_token'
+        DOCKER_CREDS = 'jenkins_docker_user_token'
     }
     stages {
         stage('Build') {
